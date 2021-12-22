@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        将所有的段落设置为红色（字体）
+        */
+
+        /* p{
+            color: salmon;
+        }
+        h1{
+            color: green;
+        } */
+
+        /* 
+            id选择器
+                作用：根据id属性值选选素
+                语法：#id属性值{}
+                例子：#box{}    #red{}
+                
+        */
+
+        /* #my-1{
+            color: grey;
+        } */
+
+        /* 
+            将456，789设置为蓝色的需求
+
+            类选择器
+                作用：根据元素的class属性值选中一组元素
+                语法：.class属性值--------------------------!!!!!!!!!!!!!!!!!!!!!!!!!重要
+        */
+        /* .my-2{
+            color: mediumspringgreen;
+        }
+        .my-3{
+            font-size: 20px;
+        } */
+
+        /*
+            通配选择器
+                作用：选中所有元素
+                语法：*{}
+        */
+
+        *{
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="my-3 my-2">标题</h1>
+    <p id="my-1">123</p>
+    <!-- 
+        class 是一个标签的属性，它和id类似，不同的是class可以重复使用
+            可以通过class属性来为元素分组
+            可以叠加class元素
+                用空格来隔开元素
+     -->
+    <p class="my-2">456</p>
+    <p class="my-2">789</p>
+    
+</body>
+</html>

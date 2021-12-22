@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他进制的数字</title>
+    <script>
+
+        /* 
+            在js中，如果需要表示16进制的数字，则需要以0x开头
+                需要表示8进制的数字，则需要以0开头
+                需要表示2进制的数字，则需要以0b开头
+        */
+       var a = 0x10;    //16进制
+       a = 0xff;    //16进制
+       a = 0xCafe;  //16进制
+       a = 070  //8进制
+       a = 0b10;    //2进制
+
+       //这种070字符串，有些浏览器会当成8进制，有些会当成10进制解析
+       a = "070";
+       var b = Number(a);
+       b = parseInt(a,10);  //(a,10进制)
+       console.log(a);  //显示出来都会转换为10进制的数字
+       console.log(typeof a);
+       console.log(b);
+       console.log(typeof b);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

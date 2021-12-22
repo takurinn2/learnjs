@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+<style>
+    .box1{
+        width: 100px;
+        height: 100px;
+
+        /* 
+            RGBA：
+                - a 表示不透明度
+                    1 标识完全不透明    0 表示完全透明  .5 表示半透明
+            
+            十六进制的RGB值
+                - 语法： #红色绿色蓝色
+                - 颜色浓度通过 00-ff
+                - 如果颜色两位两位重复可以进行简写
+                    #aabbcc --> #abc
+
+            HSL和HSLA值
+                H 色相  (0 - 360) 360度的缘故，色相环
+                S 饱和度 (0 - 100%)
+                L 亮度 (0 - 100%)
+        */
+
+        background-color: rgba(100, 241, 237, .5);
+        background-color: #ffff00;
+        background-color: #ff0;
+        background-color: #f1b9b9;
+        background-color: hsl(hue, saturation, lightness);
+        background-color: hsl(155, 44%, 52%);
+    }
+</style>
+<body>
+    
+
+        <div class="box1"></div>
+</body>
+</html>

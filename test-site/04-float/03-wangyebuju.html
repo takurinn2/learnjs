@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页的布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        header, main, footer{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header{
+            height: 200px;
+            background-color: silver;
+        }
+
+        main{
+            height: 500px;
+            background-color: #bfa;
+            margin: 10px auto;
+        }
+
+        nav{
+            float: left;
+            width: 200px;
+            height: 100%;
+            background-color: yellow;
+        }
+
+        article{
+            float: left;
+            width: 580px;
+            height: 100%;
+            background-color: orange;
+            /* border-box 只包括可见宽，marigin 是不可见宽度，所以不能用 */
+            box-sizing: border-box;
+            margin: 0 10px;
+        }
+
+        aside{
+            float: left;
+            width: 200px;
+            height: 100%;
+            background-color: pink;
+        }
+
+        footer{
+            height: 150px;
+            background-color: tomato;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+
+    <!-- 主体 -->
+    <main>
+        <!-- 左侧导航 -->
+        <nav></nav>
+
+        <!-- 中间内容 -->
+        <article></article>
+
+        <!-- 右边边栏 -->
+        <aside></aside>
+
+
+    </main>
+
+    <!-- 底部 -->
+    <footer></footer>
+    
+</body>
+</html>

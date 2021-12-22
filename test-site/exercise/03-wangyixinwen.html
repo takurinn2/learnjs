@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #bfa;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+        /* 外容器 */
+        .news{
+            width: 300px;
+            height: 357px;
+            background-color: #fff;
+            margin: 50px auto;
+            border-top: 1px solid #ddd;
+            
+        }
+        /* 设置title */
+        .news-title{
+            /* 为了边框和文字宽度一致，需要将h2转化为行内块元素 */
+            display: inline-block;
+            height: 43px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            
+        }
+        /* 设置titile中超链接 */
+        .news-title a{
+            /* 去除下划线 */
+            text-decoration: none;
+            color: #40406B;
+            /* 文字加粗 */
+            font-weight: bold;
+            font-size: 16px;
+            padding: 6px 0 10px 0;
+        }
+        .news-img{
+            height: 90px;
+        }
+        .news-img a{
+            width: 0;
+            height: 0;
+        }
+
+
+
+
+        .img-title{
+            height: 40px;
+            background-color: #fff;
+            border: 0 1px 1px 1px;
+            border-color: #666;
+
+        }
+        .b1{
+            width: 55px;
+            height: 100%;
+            background-color: #f34540;
+        }
+        .hot{
+            color: #fff;
+        }
+
+
+
+        .news-list{
+            margin-top: 20px;
+            padding-left: 18px;
+            color: #666;
+            list-style: square ;
+            
+            
+        }
+        .news-list li{
+            margin-bottom: 17px;
+
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666;
+        }
+        /* .news-list li::before{
+            
+        } */
+        .news-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 外层容器 -->
+    <div class="news">
+        <!-- 创建标题 -->
+        <h2 class="news-title">
+            <a href="#">新闻专题</a>
+        </h2>
+
+        <!-- 图片容器 -->
+        <div class="news-img">
+            <a href="#">
+                <img src="./img/02wangyi/04.jpg" alt="回家">
+            </a>
+
+            <!-- 创建图片标题 -->
+            
+                <div class="img-title">
+                    <span class="b1">
+                    <span class="hot">HOT</span>
+                    </span>
+
+                    <span class="b2">
+                    <a href="#">2021年春节春运</a>
+                    </span>
+                </div>
+                    
+                
+            
+
+            <!-- 新闻列表 -->
+            <ul class="news-list">
+                <li>
+                    <a href="#">2020年全国两会</a>
+                </li>
+                <li>
+                    <a href="#">2020年春运春节</a>
+                </li>
+                <li>
+                    <a href="#">中国答卷-新中国成立70周年</a>
+                </li>
+                <li>
+                    <a href="#">海军成立70周年</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

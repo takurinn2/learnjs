@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逻辑运算符</title>
+    <script>
+
+        /* 
+            JS中为我们提供了三种逻辑运算符
+                
+                &&  与
+                    - &&可以对符号两侧的值进行与运算并返回结果
+                        运算规则
+                            - 全真为真，有假为假
+                        - JS中的“与”属于短路的“与”,
+                            如果第一个值为flase，则不会再看第二个值
+                ||  或
+                    - || 可以对符号两侧的值进行运算并返回结果
+                        运算规则
+                            - 有真为真，全假为假
+                            JS中的“或”属于短路的“或”
+                                只要第一个值时true，则不会检查第二个值
+                !   非
+                    - ！可以用来对一个值进行非运算
+                        对一个布尔值(boolean)进行取反
+                        true-->false    flase-->true
+                        对一个值进行两次取反，不会变化
+                    - 对非布尔值进行运算，则会将其转换为布尔值，然后取反
+                        所以可以利用该特点，将一个其他数据类型转化为布尔值
+                        对一个任意数据类型去两次反就可以转化为布尔值
+        */
+
+        // var a = false;
+        //对a进行非运算
+        // a = !a;
+        // a = "hello";
+        // a = !!a;
+        // console.log("a = " + a);
+
+        // var b = 10;
+        // b = !!b;    //直接转换为正确的布尔值
+        // console.log("b = " + b);
+        // console.log(typeof b);
+
+        var result = true && true;  //true
+        var result = true && false;  //false
+        var result = false && false;  //false
+        // console.log("result = " + result);
+
+        // false && alert("我就是一个alert");
+
+        result = false || false;
+        console.log("result = " + result);
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符</title>
+    <script>
+
+        /* 
+            运算符也叫做操作符
+                通过运算可以对一个或多个值进行运算，并获取运算结果
+                比如：typeof 就是运算符，可以来获得一个值的类型
+                    它会将该值的类型以字符串的形式返回
+                    number string boolean undefined object
+
+                算数运算符
+                    当对非Number类型的值进行运算是，会先转换成Number然后再运算
+                        任何值和NaN做运算都得NaN
+
+                    +  
+                        + 可以对两个值进行加法运算，并将结果返回
+                            如果对两个字符串进行加法运算，则会做拼串
+                                会将两个字符串拼接为一个字符串，并返回
+                            任何的值和字符串做加法运算，都会先转换为字符串，然后再和字符串做拼串操作
+                    -
+                        - 可以对两个值进行减法运算，并将结果返回
+                            任何值做 减法 乘法 除法 运算时，都会自动转换为Number
+                    *
+                        * 可以对两个值进行乘法运算，并将结果返回
+                    /
+                        / 可以对两个值进行除法运算，并将结果返回
+                    %
+                        % 取模运算(取余数)
+        */
+       var a = 123;
+
+       var result = typeof a;
+    //    console.log(typeof result);
+        result = a + 1;
+
+        result = 456 + 789;
+
+        result = true + 1;
+
+        result = true + false;
+
+        result = 2 + null;
+
+        result = 2 + NaN;   //输出为NaN
+
+        result = "你好" + "456"; //输出类型为字符串
+        
+        var str = "我是第一行," +
+                  "我是第二行," +
+                  "我是第三行," +
+                  "我是第四行,";
+
+        result = 123 + "1"; //输出为1231字符串
+        result = true + "hello";    //输出为truehello字符串
+        
+        //任何值和字符串想加都会转换为字符串，然后做拼串操作
+        var c = 123;
+        // c = String(c);
+        c = c + "";     //可以用这个特点将任意类型转换为String  ,可读性很差
+                        //这是一种隐藏式的类型转换，实际上也是调用了String()函数
+
+        // c = null;
+        // c = c + "";
+
+        console.log(str);
+        console.log(result);
+        console.log(typeof result);
+        // console.log("c = " + c);    //输出为c = 12字符串
+
+        result = 1 + 2 + "3";   //输出为33字符串
+        result = "1" + 2 + 3 ;  //输出为123字符串
+
+        console.log("result = " + result);
+
+
+        result = 100 - 5;
+        result = 100 - true;
+        result = 100 - "1";
+
+        console.log("result2 = " + result);
+
+
+        result = 2 * 2;
+        result = 2 * undefined;     //输出为NaN
+        result = 2 * null;      //输出为0
+        result = 4 / 2;
+        result = 3 / 2;     //输出为1.5
+
+
+        console.log("result3 = " + result); 
+
+        var d = "123";
+        // d = Number(d);
+        d = d - 0;  //也可以用这种方法转换为Number
+                    //原理和Number()函数一样
+        console.log(typeof d);
+        console.log("d = " + d);
+        
+
+        var e = 9 % 3; 
+        e = 9 % 4;  //输出为1       
+        console.log(typeof e);
+        console.log(e);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

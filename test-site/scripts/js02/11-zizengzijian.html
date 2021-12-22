@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自增和自减</title>
+    <script>
+
+        /* 
+            自增 ++
+                - 通过自增可以使变量在自身的基础上增加1
+                - 对于一个变量自增以后，原变量的值会立即自增1
+                - 自增分为两种：后++(a++) 和 前++(++a)
+                    a++ 是先处理完这一条命令后再+1
+                    ++a 是先+1后再处理这一条命令
+
+            自减 --
+                - 通过自减可以使变量在自身的基础上减去1
+                - 同上
+        */
+
+       var a = 1;
+       //使a自增1
+    //    a++;
+
+    //    ++a;
+    
+        // console.log(a++);
+        // console.log(++a);
+
+        // console.log("a = " + a);
+
+        var c = 10;
+        c++;    //自增1
+
+        // console.log(c++);
+
+        var d = 20;
+        // var result = d++ + ++d + d; //输出为64
+        d = d++;    //输出为10
+
+        var num = 10;
+        num--;
+        num = --num;
+        num = num--;
+        console.log("num = " + num);
+        console.log(--num);
+        console.log(num--);
+        console.log("num = " + num);
+
+
+        //作业
+        var n1 = 10 , n2 = 20;
+        var n = n1++;
+        console.log("n = " + n);    //10
+        console.log("n1 = " + n1);  //11
+        n = ++n1;
+        console.log("n="+n);    //12
+        console.log("n1="+n1);  //12
+        n = n2--;
+        console.log("n="+n);    //20
+        console.log("n2="+n2);  //19
+        n = --n2;
+        console.log("n="+n);    //18
+        console.log("n2="+n2);  //18
+
+        // var a = 10;
+        // a = a++;
+        // console.log(a);
+        
+        // var b = 10;
+        // var c = b++;
+        // console.log(b);
+        // console.log(c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

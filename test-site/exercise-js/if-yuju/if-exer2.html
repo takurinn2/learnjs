@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if练习2</title>
+    <script>
+        var h = prompt("身高/cm");
+        var m = prompt("财富/万");
+        var s = prompt("帅气程度(0-100)");
+
+        if(isNaN(h) || isNaN(m) || isNaN(s)){
+            alert("???");
+        }
+        else{
+            if(h > 180 && m > 1000 && s > 90){
+                alert("一定要");
+            }
+            /*
+            else if(h > 180){
+                alert("勉强");
+            }
+            else if(m > 1000){
+                alert("勉强");
+            }
+            else if(s > 90){
+                alert("勉强");
+            }
+            */
+            else if(h > 180 || m > 1000 || s > 90){
+                alert("勉强");
+            }
+            else{
+                alert("什么玩意");
+            } 
+        }
+        
+
+
+    </script>
+    <style>
+        a{
+            height: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

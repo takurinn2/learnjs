@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质数</title>
+    <script>
+
+        /*
+            质数练习
+                接受用户输入的数字，判断是否为质数.
+        */
+
+        //创建变量保存状态
+        var flag = true
+        
+        while(true){
+            var n = prompt("输入一个数:");
+            
+            if(n >= 0){
+                for(var i = 2; i < n;i++){
+                    if(n%i == 0){//不是质数判断
+                        alert(n + "不是质数");
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag){
+                    alert(n + "是质数")
+                }
+            }
+            else{
+                alert("请输入有效数字");
+            }
+            
+            
+            
+        }
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

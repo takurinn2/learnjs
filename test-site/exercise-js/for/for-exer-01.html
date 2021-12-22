@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for练习</title>
+    <script>
+
+        var sum = 0;
+        var n = 0;
+        //打印1-100之间的奇数之和
+        for(var i = 1;i <= 100; i++){
+            n = 2*i-1;
+            document.write(n + "<br>");
+            sum = sum + n;
+            if(n >= 99){
+                break;
+            }
+        }
+        document.write("奇数之和为:" + sum);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
