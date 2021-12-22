@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关系选择器</title>
+    <style>
+        /* 
+            为div的子元素span设置一个字体颜色为红色
+
+            子元素选择器
+                作用：选中指定父元素的制定子元素
+                语法：父元素 > 子元素
+        */
+
+        /* 
+        div.my-1 > span{
+            color: orange;
+        } 
+        */
+
+        /* 
+            后代元素选择器
+                作用：选中制定元素内的后代元素
+                语法：祖先 后代
+        */
+/* ------------------------------------------------------!!!!!!!!!
+        div.my-2 span{
+            color: pink;
+        }
+
+        div.my-1 > p > span{
+            color: rebeccapurple;
+        } */
+
+        /* 
+            相邻选择器(+,~)
+                作用：选择下一个弟元素，选择下面所有的弟元素
+                语法：兄 + 弟
+                语法2：兄 ~ 弟
+        */
+
+        p ~ span{
+            color: salmon;
+        }        
+    </style>
+</head>
+<body>
+
+    <!-- 
+        父元素
+        子元素
+        祖先元素
+        后代元素
+        兄弟元素
+     -->
+    
+    <div class="my-1">我是一个div
+        <p>
+            我是div中的p元素
+            <span>
+                我是p元素中的span
+            </span>
+        </p>
+        <span>
+            我是div中的span元素
+        </span>
+    </div>
+
+    <div class="my-2">
+        <span>我是div外部span</span>
+    </div>
+
+
+</body>
+</html>

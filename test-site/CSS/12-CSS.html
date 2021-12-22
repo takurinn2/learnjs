@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+    <style>
+        /* div#box1{
+            background-color: skyblue;
+        } */
+
+        .red{
+            background-color: seagreen;
+            font-size: 20px;
+        }
+
+        /* #box1{
+            background-color: salmon;
+        } */
+
+        .d1{
+            background-color: purple;
+        }
+
+        div,p,span{
+            background-color: thistle;
+        }
+
+
+        /* 
+            样式的冲突
+                - 当我们通过不用的选择器，选中相同的元素，并且为相同的样式设置不同的值时
+                  此时就发生了样式的冲突
+            
+            发生样式冲突时，由选择器的优先级决定
+
+            选择器的权重
+                - 内联样式
+                - id选择器
+                - 类和伪类选择器
+                - 元素选择器
+                - 通配
+                - 继承(没有优先级)
+
+            比较优先级时，需要将所有的选择器的优先级进行相加计算，最终的优先级越高，越优先显示(分组选择器时单独计算的)
+                选择器的累加不会超过其最大的数量级，类选择器再高也不会超过id选择器
+            
+            优先级计算相同，优先使用靠下的样式
+        */
+
+        *{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1" class="red d1">我是一个div</div>
+    
+</body>
+</html>

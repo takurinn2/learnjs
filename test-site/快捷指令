@@ -1,0 +1,44 @@
+command + 回车    快速换行
+！+ 回车     基础模板
+command + / 创建注释
+ul > li*n自动生成列表             tab 键可以自动切换下一行
+lor 创建一段文字
+h100 + tab 直接生成 height:100px ，同理 w100  
+.??? 可以直接生成 <div class ".???">
+
+padding 内边距
+border 边框
+content 内容
+margin 外边距
+*{
+    margin= 0;
+    padding= -;
+} 通配符
+
+oh overflow hidden
+
+position 开启定位
+
+.clearfix::before,
+.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+
+display:block 转换块元素
+float:left 浮动
+
+alert("弹窗");
+document.write()文本
+console.log()控制台
+
+                    String 字符串
+                    Number 数值
+                    Boolean 布尔值
+                    Null 空值
+                    Undefined 未定义
+                    Object 对象
+
+

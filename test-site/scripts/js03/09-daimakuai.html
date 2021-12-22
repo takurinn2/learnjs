@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代码块</title>
+    <script>
+
+        /*
+            程序是由一条一条语句构成的
+                语句时按照自上向下的顺序执行的
+                在JS中可以使用{}来为语句进行分组
+                    同一个{}中的语句是一组语句，叫做代码块
+                    要么都执行，要么都不执行
+
+            JS中的代码块，只具有分组的作用，没有其他用途
+                代码块的内容，外部完全可见
+        */
+        {
+            var a = 10;
+            alert("hello");
+
+            console.log("你好");
+
+            document.write("语句");
+        }
+
+        console.log("a = " + a);    //输出a = 10
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

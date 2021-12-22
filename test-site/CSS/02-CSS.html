@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS简介</title>
+
+
+    <!-- 
+        第二种方式
+            - 将样式写在head中的style标签里
+                通过CSS的选择器来选中元素并设置样式
+            - 方便对样式进行复用
+     -->
+
+     <!-- <style>
+
+        p{
+            color: rgb(39, 202, 67);
+            font-size: 30px;
+        }
+
+     </style> -->
+
+
+     <!-- 
+         第三种方式(外部样式表)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!重要
+            - 可以将CSS样式边写到一个外部的CSS文件中，
+                然后通过link标签引入外部的CSS标签
+      -->
+      <link rel="stylesheet" href="./styles/style-1.css">
+</head>
+<body>
+    <!-- 
+        网页三部分：
+            结构(html)
+            表现(CSS)
+            行为(JavaScript)
+        CSS
+            - 层叠样式表
+            - 网页是多层的,通过CSS设置每一层
+     -->
+
+     <!-- 
+         CSS修改元素样式
+         第一种方式:
+            - 标签内部用style属性来设置元素的样式(开发不要用！)
+      -->
+     <!-- <p style="color: red; font-size: 30px;">少小离家老大回</p>
+
+     <p style="color: red; font-size: 20px;">今天天气真不错！</p> -->
+
+    <p>我不知道只是什么情况</p>
+</body>
+</html>

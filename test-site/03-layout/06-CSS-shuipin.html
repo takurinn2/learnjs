@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子的水平布局</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+
+        .inner{
+            /* width 的默认值就是auto */
+            /* width: auto; */
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin-right: 200px;
+            margin-left: auto;
+            
+            
+            /* 
+                元素的水平方向的布局：
+                    元素在其父元素中水平方向的位置由以下几个属性共同决定：
+                        margin-left
+                        border-left
+                        padding-left
+                        width
+                        padding-righ
+                        border-right
+                        margin-right
+
+                    以上七值构成水平布局父元素内容区的宽度(必须满足)
+
+                    0+0+0+200+0+0+0 = 800
+                    0+0+0+200+0+0+600 = 800 
+                        - 等式必须成立
+                            浏览器会往margin-right添加值使等式两边平衡
+                        - 只有三个值可以设置auto
+                            width
+                            margin-left
+                            margin-right
+                            - 如果某个值为auto,则会自动调整那个值十等式成立
+                                0 + 0 + 0 + auto + 0 + 0 + 0 = 800
+
+                        - 如果将一个宽度和一个外边距设置为 auto ，则宽度会调整至最大
+                        - 如果将三个值都设置为 auto ，则根没设置一样，宽度自动填满
+                        - 如果将两个外边距设置为auto,宽度值固定，则外边距设置为相同的值
+                            经常用这个来在其父元素中水平居中
+                            示例:
+                                width:xxxpx;
+                                margin:0 auto
+
+
+
+            */
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+
+        <div class="inner"></div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关系运算符</title>
+    <script>
+
+        /* 
+            通过关机运算符可以比较两个值之间的大小关系，
+                如果关系成立它会返回true，如果关系不成立则会返回false
+
+            > 大于号
+                - 判断符号左侧值是否大于右侧
+                - 如果关系成立，返回true，如果关系不成立则返回false
+
+            >= 大于等于
+
+            < 小于
+
+            <=小于等于
+            
+            非数值的情况
+                - 对于非数值进行比较时，会将其转换为数字然后再比较
+                - 如果符号两边都是字符串时，不会转换成为数字进行比较
+                    而是分别比较字符串中字符的Unicode编码
+        */
+
+        var result = 5 > 10;    //false
+        result = 5 > 4;         //true
+        result = 5 > 5;         //false
+        result = 5 >= 5;        //true
+        result = 5 >= 4;        //true
+        result = 5 < 4;        //false
+
+        // console.log("result = " + result);
+        console.log(1 > true);  //false
+        console.log(1 >= true); //true
+        console.log(1 > "0"); //true
+        console.log(10 > null); //true
+        console.log(10 > "hello"); //false  任何值和NaN做任何比较都是false
+        console.log(true > false); //true
+
+        //比较的是字符串的字符编码
+        console.log("1" < "5"); //true  1的Unicode编码是0031 5是0035
+        console.log("11" < "5"); //true
+
+        console.log("a" < "b"); //true  a的Unicode编码是0061  b的Unicode编码是0062
+        //比较字符编码时是一位一位进行比较的，如果两位一样则比较下一位
+        console.log("abc" < "b");   //true
+        console.log("abc" < "aa");   //false
+
+        console.log("你" > "我");   //false 比较中文无意义
+
+        //如果比较的两个字符串型的数字，可能会得到不可预期的结果
+        //所以一定要转型
+        console.log("1325432654764932692" < +"5"); //false
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
